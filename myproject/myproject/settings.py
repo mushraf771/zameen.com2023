@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts',
     'agents',
-    # 'properties',
+    'properties',
     # 'contacts',
 ]
 

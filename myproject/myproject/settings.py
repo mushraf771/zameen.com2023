@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'agents',
     'properties',
-    # 'contacts',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -149,6 +149,12 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 6
 }
+CORS_ALLOWED_ORIGINS = [
+    # "https://example.com",
+    # "https://sub.example.com",
+    "http://localhost:3000",
+    # "http://127.0.0.1:9000",
+]
 CORS_ALLOW_HEADERS = [
     "accept",
     "accept-encoding",
@@ -161,6 +167,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
